@@ -1,39 +1,28 @@
-# node-js-getting-started
+# Cupcake Commerce Server
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+## Documentation 
+[API Documentation](https://cameronscupcakes.docs.apiary.io/#)
 
-This application supports the [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+[Database Schema](https://dbdiagram.io/d/5e33b2529e76504e0ef0ddeb)
 
-## Running Locally
+## Available Scripts
 
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
+In the project directory, you can run:
 
-```sh
-$ git clone https://github.com/heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
-$ npm install
-$ npm start
+### `yarn start`
+Runs app in production mode on port 8080
+
+### `yarn dev`
+Runs app in development mode on port 8080, and watches for changes
+
+### `yarn build`
+Builds Typescript files, equivalent to:
+```
+tsc
 ```
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+## Postman
 
-## Deploying to Heroku
+Included in this repo are: Postman Collection, Postman Environment for local end points, Postman Environment for server endpoints
 
-```
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
-or
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Documentation
-
-For more information about using Node.js on Heroku, see these Dev Center articles:
-
-- [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+In the environments, add tour auth0 `user_id` to the `Current Value` of `my-user-id`.
